@@ -1,0 +1,19 @@
+Observe o trecho de código:
+
+int INDICE = 12, SOMA = 0, K = 1;
+
+enquanto K < INDICE faça
+
+{ K = K + 1; SOMA = SOMA + K;}
+
+imprimir(SOMA);
+
+
+Ao final do processamento, qual será o valor da variável SOMA?
+
+R = Ao final do processamento, a variável soma terá o valor de 77.
+
+Durante o programa, a variável K assume valores de 1 até 12, sendo acrescentados de 1 em 1,
+A cada iteração do loop, a variável K, que pode ser chamada de variável contadora, é incrementada de 1 unidade, 
+enquanto a variável SOMA, que pode ser chamada de variável acumuladora, é resultado da soma entre o valor da variável K e o 
+valor da variável SOMA anterior. A variável SOMA assume os valores de 0, 2, 5, 9, 14, 20, 27, 35, 44, 54, 65 e por fim, 77.
