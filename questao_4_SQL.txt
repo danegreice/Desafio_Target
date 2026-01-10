@@ -1,0 +1,18 @@
+Consulta SQL:
+
+SELECT 
+    c.id_cliente,
+    c.nome,
+    t.numero AS telefone
+FROM Cliente c
+INNER JOIN Estado e ON e.id_estado = c.id_estado
+INNER JOIN Telefone t ON t.id_cliente = c.id_cliente
+WHERE e.codigo = 'SP';
+
+Esse comando seleciona o id, nome e número de telefone de todos os cliente de SP.
+Ele realiza uma junção das tabelas Cliente, Estado (cujo id é o mesmo relacionado a tabela Cliente) 
+e Telefone (cujo id é o mesmo relacionado a tabela Cliente).
+
+A representação das tabelas foi feita através de um diagrama de classe utilizando a notação UML para representar
+as classes, seus relacionamentos e seus atributos.
+
